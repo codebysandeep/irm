@@ -1,1 +1,276 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+// Project Theme
+@import "assets/scss/custom-theme.scss";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* CRUX Global Style */
+// @import "~@crux/themes/material/global";
+// @import "~@angular/cdk/overlay-prebuilt.css";
+// @import "~@crux/themes/core";
+
+@include mat-core();
+
+// Project SCSS Import
+@import "assets/scss/variables";
+@import "assets/scss/mixins";
+@import "assets/scss/utilities";
+
+// 
+///// ********** Universal CSS Start ********** /////
+// 
+body {
+  background-color: $gray-50;
+  color: $black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+// 
+///// ********** Universal CSS End ********** /////
+//
+
+
+// 
+///// ********** Common CSS Start ********** /////
+//
+
+// Container Start
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+// Container End
+
+// Image CSS Start
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+// Image CSS End
+
+// Padding Start
+.p-1 {
+  padding: 10px;
+}
+
+.p-2 {
+  padding: 20px;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+.p-4 {
+  padding: 40px;
+}
+
+.p-5 {
+  padding: 50px;
+}
+
+.p-1-x {
+  padding: 0 10px;
+}
+
+.p-2-x {
+  padding: 0 20px;
+}
+
+.p-3-x {
+  padding: 0 30px;
+}
+
+.p-4-x {
+  padding: 0 40px;
+}
+
+.p-5-x {
+  padding: 0 50px;
+}
+
+.p-1-y {
+  padding: 10px 0;
+}
+
+.p-2-y {
+  padding: 20px 0;
+}
+
+.p-3-y {
+  padding: 30px 0;
+}
+
+.p-4-y {
+  padding: 40px 0;
+}
+
+.p-5-y {
+  padding: 50px 0;
+}
+
+// Padding End
+
+// Margin Start
+.m-1 {
+  margin: 10px;
+}
+
+.m-2 {
+  margin: 20px;
+}
+
+.m-3 {
+  margin: 30px;
+}
+
+.m-4 {
+  margin: 40px;
+}
+
+.m-5 {
+  margin: 50px;
+}
+
+.m-1-x {
+  margin: 0 10px;
+}
+
+.m-2-x {
+  margin: 0 20px;
+}
+
+.m-3-x {
+  margin: 0 30px;
+}
+
+.m-4-x {
+  margin: 0 40px;
+}
+
+.m-5-x {
+  margin: 0 50px;
+}
+
+.m-1-y {
+  margin: 10px 0;
+}
+
+.m-2-y {
+  margin: 20px 0;
+}
+
+.m-3-y {
+  margin: 30px 0;
+}
+
+.m-4-y {
+  margin: 40px 0;
+}
+
+.m-5-y {
+  margin: 50px 0;
+}
+
+// Margin End
+
+
+// 
+///// ********** Common CSS End ********** /////
+//
+
+
+// 
+///// ********** App Page Start ********** /////
+//
+
+// Header Start
+.header {
+  // background: linear-gradient(90deg, #833AB4 0%, #FD1D1D 50%, #FCB045 100%) !important;
+  // background: $gray-900;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px 10px 4px;
+  position: absolute;
+  width: 295px;
+
+  box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+  background: $white;
+  color: $black;
+
+  .header-logo {
+    width: 196px;
+    // margin: 4px 0 0;
+    display: inline-block;
+  }
+  .irm-logo {
+    width: 56px;
+    margin: 0 0 0 20px;
+    display: inline-block;
+  }
+
+  .header-logo-tag {
+    margin: 7px 0 0;
+  }
+}
+// Header End
+
+.app-page {
+  color: #fff;
+
+  // Message
+  .app-page--message {
+    margin: 20% 0 0;
+
+    h1 {}
+
+    p {}
+  }
+}
+
+// 
+///// ********** App Page End ********** /////
+//

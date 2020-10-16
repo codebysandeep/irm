@@ -1,0 +1,169 @@
+// All Variables
+
+//
+// Color system
+//
+
+
+// Default colors
+//
+// System default colors
+
+$white: #fff;
+$gray-50: #fafafa;
+$gray-100: #f9f9f9;
+$gray-200: #f0f0f0;
+$gray-300: #e4e4e4;
+$gray-400: #e1e1e1;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+
+
+// CRUX Branding
+//
+// CRUX default branding colors
+
+$blue: #150f96;
+$turquoise: #01c1d6;
+$orange: #ff6600;
+$fuschia: #ff0198;
+$yellow: #ffb617;
+$purple: #6e27c5;
+$purple-lite: #A811DA;
+$green: #7acb00;
+$red: #f1352b;
+$gray: #4b4e52;
+
+
+
+// Theme
+//
+// Theme colors name
+
+$theme-primary: $blue;
+$theme-secondary: $turquoise;
+$theme-success: $green;
+$theme-info: $orange;
+$theme-warning: $yellow;
+$theme-danger: $red;
+$theme-light: $gray-300;
+$theme-dark: $gray;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $white;
+$body-color: $black;
+$body-gray: $gray-100;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: $theme-primary;
+$link-decoration: none;
+$link-hover-color: $theme-secondary;
+$link-hover-decoration: underline;
+
+
+// Options
+//
+$enable-rounded: true;
+
+// Spacing
+//
+
+$spacer: 1rem;
+$page-spacers: ( 0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer * 1.5), 5: ($spacer * 2.5) );
+
+@each $page-space, $space in $page-spacers {
+  .spacer-#{$page-space} {
+    height: $space;
+    min-height: $space;
+    overflow: hidden;
+    font-size: 0;
+  }
+}
+
+
+// Z-index master list
+//
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-modal-backdrop: 1040;
+$zindex-modal: 1050;
+$zindex-popover: 1060;
+$zindex-tooltip: 1070;
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+$line-height-lg: 1.5;
+$line-height-sm: 1.5;
+
+$border-width: 1px;
+$border-color: $gray-300;
+
+$border-radius: .25rem;
+$border-radius-lg: .3rem;
+$border-radius-sm: .2rem;
+
+$box-shadow-sm: 0 .125rem .25rem rgba($black, .075);
+$box-shadow: 0 .5rem 1rem rgba($black, .15);
+$box-shadow-lg: 0 1rem 3rem rgba($black, .175);
+
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom: 1rem;
+
+$theme-font: "mono type";
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif;
+// stylelint-enable value-keyword-case
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-lg: ($font-size-base * 1.25);
+$font-size-md: ($font-size-base * 1);
+$font-size-sm: ($font-size-base * .875);
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+
+// Printing
+//
+$print-page-size: a3;
+$print-body-min-width: 992px;
